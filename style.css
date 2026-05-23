@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('assets/fonts/Norse.woff2') format('woff2'),
+        url('assets/fonts/Norse.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --main-background-color: black;
+    --main-text-color: white;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+body > .background {
+    flex: 1.2;
+    background: url(assets/photo/space.jpg) no-repeat center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--main-text-color);
+}
+
+.background .logo-container {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.563);
+}
+
+.logo-container h1 {
+    font-family: 'Norse', sans-serif;
+    font-size: 3rem;
+}
+
+.logo-container img {
+    height: 4rem;
+}
+
+.background > p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    
+    text-shadow: 0 0 15px black;
+    color: rgba(255, 255, 255, 0.641);
+}
+
+.background > p a {
+    color: inherit;
+}
+
+body .main {
+    flex: 2;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .introduction {
+    padding: 2rem clamp(20px, 15%, 200px);
+}
+
+.introduction p {
+    max-width: 60ch;
+}
+
+.introduction p + p {
+    margin: 1.5rem 0;
+    font-weight: 600;
+}
+
+form {
+    background-color: rgb(23, 23, 23);
+    box-shadow: 0 5px 10px rgb(30, 30, 30);
+    padding: 1rem clamp(20px, 15%, 200px);
+}
+
+form > p {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-item-container {
+    display: flex;
+    flex-flow: row wrap;
+    border: 1px solid red;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form-item label {
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
