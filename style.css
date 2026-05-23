@@ -146,3 +146,44 @@ form > p {
     margin-bottom: 0.2rem;
     letter-spacing: 0.1rem;
 }
+
+.form-item input:user-invalid{
+    border: 1px solid rgb(225, 0, 0);
+}
+
+.form-item input:user-valid {
+    border: 1px solid green;
+}
+
+.form-item:has(input:required) label::after{
+    content: "*";
+    font-size: 1.5em;
+    color: rgb(225, 0, 0);
+}
+
+.main button[type="submit"] {
+    width: 20%;
+    padding: 10px 20px;
+    font-weight: 800;
+    border-radius: 5px;
+    margin: 2rem clamp(20px, 15%, 200px) 1.5rem;
+    border: none;
+    background-color: rgb(9, 214, 255);
+}
+
+.main > p {
+    margin: 0 clamp(20px, 15%, 200px);
+    font-size: 0.8rem;
+}
+
+.main > button[type="submit"]:hover {
+    box-shadow: 0 0 10px rgb(9, 214, 255);
+}
+
+.main > p > span {
+    color: rgb(9, 214, 255);
+}
+
+.main > p > span:hover {
+    text-decoration: underline;
+}
