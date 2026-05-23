@@ -106,38 +106,37 @@ form > p {
 }
 
 .form-item {
-
     display: flex;
     flex-direction: column;
     width: 46%;
     align-self: center;
     margin-bottom: 1rem;
+}
 
-    input {
-        background-color: rgb(0, 0, 0);
-        border-radius: 5px;
-        color: white;
-        padding: 2px 7px;
-    }
+.form-item input {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    color: white;
+    padding: 2px 7px;
+}
 
-    input::placeholder {
-        color: rgb(66, 66, 66);
-    }
+.form-item input::placeholder {
+    color: rgb(66, 66, 66);
+}
 
-    input:-webkit-autofill {
-        background-color: black;
-        color: white;
-    }
+.form-item input:-webkit-autofill {
+    background-color: black;
+    color: white;
+}
 
-    input:focus {
-        outline: none;
-        box-shadow: 0 0 5px gray;
-    }
+.form-item input:focus {
+    outline: none;
+    box-shadow: 0 0 5px gray;
+}
 
-    label {
-        font-size: 0.6rem;
-        text-transform: uppercase;
-        margin-bottom: 0.2rem;
-        letter-spacing: 0.1rem;
-    }
+.form-item label {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.1rem;
 }
