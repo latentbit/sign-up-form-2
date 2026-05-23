@@ -130,13 +130,13 @@ form > p {
 .form-item input:-webkit-autofill:focus,
 .form-item input:autofill,
 .form-item input:autofill:focus {
-    -webkit-box-shadow: 0 0 0 1000px black inset; /*offsetx, offsety, blur, spread, color*/
+    -webkit-box-shadow: 0 0 0 1000px black inset;
     -webkit-text-fill-color: white;
 }
 
 .form-item input:focus {
     outline: none;
-    box-shadow: 0 0 5px gray;
+    box-shadow: 0 0 5px rgb(0, 144, 254);
 }
 
 .form-item label {
