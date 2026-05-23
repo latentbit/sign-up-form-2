@@ -16,3 +16,6 @@
   - https://github.com/googlefonts/nunito
   - Licensed under the SIL Open Font License 1.1
   - https://openfontlicense.org
+
+### Live Preview
+  - https://latentbit.github.io/sign-up-form-2/
