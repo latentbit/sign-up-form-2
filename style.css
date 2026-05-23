@@ -102,7 +102,6 @@ form > p {
     display: flex;
     flex-flow: row wrap;
     gap: 8%;
-    border: 1px solid red;
 }
 
 .form-item {
@@ -124,9 +123,13 @@ form > p {
     color: rgb(66, 66, 66);
 }
 
-.form-item input:-webkit-autofill {
-    background-color: black;
-    color: white;
+/* For learning: The part below involves browser
+    default styles on autofill inputs */
+
+.form-item input:-webkit-autofill,
+.form-item input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 1000px black inset;
+    -webkit-text-fill-color: white;
 }
 
 .form-item input:focus {
