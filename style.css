@@ -117,6 +117,7 @@ form > p {
     border-radius: 5px;
     color: white;
     padding: 2px 7px;
+    border: 1px solid rgb(180, 180, 180);
 }
 
 .form-item input::placeholder {
